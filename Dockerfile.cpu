@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq -y \
  && apt-get install -y software-properties-common \
- && add-apt-repository -y ppa:jonathonf/ffmpeg-4 \
+ && add-apt-repository -y ppa:savoury1/ffmpeg4 \
  && apt-get update -qq -y \
  && apt-get install -y libsm6 libxrender1 libxext-dev python3-tk ffmpeg git \
  && apt-get clean \
